@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Spor Hocam</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="Web site icon" type="png" href="spor hocam.png">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="AnaSayfa.Html">
+                <img src="İmages\Logo.png" alt="Spor Hocam Logo" width="50" height="50">
+                <span class="font-weight-bold ml-2">Spor Hocam</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="ProgramlarDetay.html">Programlar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Beslenme.html">Beslenme</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="KaloriHesap.html">Kalori Hesapla</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Hakkimizda.html">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Iletisim.html">İletişim</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Blog Header -->
+    <header class="blog-header py-5 bg-light mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h1 class="display-4">Spor & Sağlık Blogu</h1>
+                    <p class="lead">Fitness, beslenme ve sağlıklı yaşam hakkında en güncel bilgiler</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Blog'da ara...">
+                        <div class="input-group-append">
+                            <button class="btn btn-success" type="button">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Blog Categories -->
+    <section class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="categories-wrapper d-flex flex-wrap justify-content-center">
+                        <a href="#" class="btn btn-outline-success m-2">Tümü</a>
+                        <a href="#" class="btn btn-outline-success m-2">Fitness</a>
+                        <a href="#" class="btn btn-outline-success m-2">Beslenme</a>
+                        <a href="#" class="btn btn-outline-success m-2">Sağlıklı Yaşam</a>
+                        <a href="#" class="btn btn-outline-success m-2">Motivasyon</a>
+                        <a href="#" class="btn btn-outline-success m-2">Başarı Hikayeleri</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Post -->
+    <section class="featured-post py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438" class="card-img-top" alt="Featured Post">
+                        <div class="card-body">
+                            <span class="badge badge-success mb-2">Öne Çıkan</span>
+                            <h2 class="card-title">Evde Fitness: Başlangıç Rehberi</h2>
+                            <p class="card-text text-muted">Evde etkili antrenman yapmanın püf noktaları ve başlangıç için temel bilgiler...</p>
+                            <div class="d-flex align-items-center">
+                                <img src="İmages\Logo.png" alt="Author" class="rounded-circle mr-2" width="40">
+                                <div>
+                                    <h6 class="mb-0">Spor Hocam</h6>
+                                    <small class="text-muted">23 Mart 2024 · 10 dk okuma</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="blog-posts py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Blog Post 1 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 border-0 shadow-sm" data-toggle="modal" data-target="#blogModal1" style="cursor: pointer;">
+                        <img src="https://images.unsplash.com/photo-1532384748853-8f54a8f476e2" class="card-img-top" alt="Blog Post">
+                        <div class="card-body">
+                            <span class="badge badge-success mb-2">Fitness</span>
+                            <h5 class="card-title">Doğru Squat Tekniği</h5>
+                            <p class="card-text">Squat hareketini doğru yapmanın incelikleri ve sık yapılan hatalar...</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="İmages\Logo.png" alt="Author" class="rounded-circle mr-2" width="30">
+                                <small class="text-muted">20 Mart 2024 · 5 dk okuma</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 border-0 shadow-sm" data-toggle="modal" data-target="#blogModal2" style="cursor: pointer;">
+                        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a" class="card-img-top" alt="Blog Post">
+                        <div class="card-body">
+                            <span class="badge badge-success mb-2">Beslenme</span>
+                            <h5 class="card-title">Protein Kaynakları</h5>
+                            <p class="card-text">Bitkisel ve hayvansal protein kaynakları ve günlük protein ihtiyacı...</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="İmages\Logo.png" alt="Author" class="rounded-circle mr-2" width="30">
+                                <small class="text-muted">18 Mart 2024 · 7 dk okuma</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 4 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 border-0 shadow-sm" data-toggle="modal" data-target="#blogModal4" style="cursor: pointer;">
+                        <img src="https://images.unsplash.com/photo-1551632436-cbf8dd35adfa" class="card-img-top" alt="Blog Post">
+                        <div class="card-body">
+                            <span class="badge badge-success mb-2">Egzersiz</span>
+                            <h5 class="card-title">Evde Kardiyo Egzersizleri</h5>
+                            <p class="card-text">Ekipman gerektirmeyen etkili kardiyo hareketleri...</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="İmages\Logo.png" alt="Author" class="rounded-circle mr-2" width="30">
+                                <small class="text-muted">14 Mart 2024 · 8 dk okuma</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 5 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 border-0 shadow-sm" data-toggle="modal" data-target="#blogModal5" style="cursor: pointer;">
+                        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061" class="card-img-top" alt="Blog Post">
+                        <div class="card-body">
+                            <span class="badge badge-success mb-2">Beslenme</span>
+                            <h5 class="card-title">Sağlıklı Atıştırmalıklar</h5>
+                            <p class="card-text">Fitness dostu atıştırmalık tarifleri ve önerileri...</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="İmages\Logo.png" alt="Author" class="rounded-circle mr-2" width="30">
+                                <small class="text-muted">12 Mart 2024 · 6 dk okuma</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 6 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 border-0 shadow-sm" data-toggle="modal" data-target="#blogModal6" style="cursor: pointer;">
+                        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b" class="card-img-top" alt="Blog Post">
+                        <div class="card-body">
+                            <span class="badge badge-success mb-2">Yaşam Tarzı</span>
+                            <h5 class="card-title">Uyku ve Performans</h5>
+                            <p class="card-text">Kaliteli uykunun spor performansına etkileri...</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="İmages\Logo.png" alt="Author" class="rounded-circle mr-2" width="30">
+                                <small class="text-muted">10 Mart 2024 · 5 dk okuma</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Post Modals -->
+    <!-- Modal 1 - Squat Tekniği -->
+    <div class="modal fade" id="blogModal1" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title">Doğru Squat Tekniği</h5>
+                    <button type="button" class="close text-white" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-success mb-4">
+                        <i class="fas fa-info-circle mr-2"></i>
+                        <strong>Egzersiz Tekniği Serisi #1:</strong> Bu yazıda squat hareketinin doğru tekniğini ve yaygın hataları öğreneceksiniz.
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1532384748853-8f54a8f476e2" class="img-fluid mb-4" alt="Squat Tekniği">
+                    <div class="blog-content">
+                        <p class="lead">Squat, alt vücut gelişimi için en etkili egzersizlerden biridir. Doğru teknikle yapıldığında bacak kaslarınızı güçlendirir ve genel fitness seviyenizi artırır.</p>
+                        
+                        <h4>Doğru Squat Tekniği Nasıl Olmalı?</h4>
+                        <ul>
+                            <li>Ayaklar omuz genişliğinde açık</li>
+                            <li>Dizler ayak parmak uçlarıyla aynı hizada</li>
+                            <li>Sırt düz, göğüs dik</li>
+                            <li>Kalça geriye doğru itilmiş</li>
+                            <li>Ağırlık topuklarda</li>
+                        </ul>
+
+                        <h4>Sık Yapılan Hatalar</h4>
+                        <ul>
+                            <li>Dizlerin içe doğru kapanması</li>
+                            <li>Topukların yerden kalkması</li>
+                            <li>Sırtın yuvarlaklaşması</li>
+                            <li>Çok hızlı hareket etmek</li>
+                        </ul>
+
+                        <h4>İpuçları</h4>
+                        <p>Başlangıçta ağırlıksız çalışarak tekniğinizi geliştirin. Aynada kendinizi kontrol edin veya video çekin. Gerekirse bir fitness eğitmeninden yardım alın.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+                    <button type="button" class="btn btn-success">Kaydet</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 - Protein Kaynakları -->
+    <div class="modal fade" id="blogModal2" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title">Protein Kaynakları</h5>
+                    <button type="button" class="close text-white" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-success mb-4">
+                        <i class="fas fa-info-circle mr-2"></i>
+                        <strong>Beslenme Rehberi #1:</strong> Protein kaynaklarını ve günlük ihtiyacınızı öğrenin.
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a" class="img-fluid mb-4" alt="Protein Kaynakları">
+                    <div class="blog-content">
+                        <p class="lead">Protein, kas gelişimi ve onarımı için en önemli besin öğelerinden biridir. Günlük protein ihtiyacınızı karşılamak için çeşitli kaynakları kullanabilirsiniz.</p>
+                        
+                        <h4>Hayvansal Protein Kaynakları</h4>
+                        <ul>
+                            <li>Tavuk göğsü (100g = 31g protein)</li>
+                            <li>Yumurta (1 adet = 6g protein)</li>
+                            <li>Ton balığı (100g = 26g protein)</li>
+                            <li>Yağsız kırmızı et (100g = 27g protein)</li>
+                        </ul>
+
+                        <h4>Bitkisel Protein Kaynakları</h4>
+                        <ul>
+                            <li>Mercimek (100g = 9g protein)</li>
+                            <li>Kinoa (100g = 4.4g protein)</li>
+                            <li>Nohut (100g = 9g protein)</li>
+                            <li>Badem (100g = 21g protein)</li>
+                        </ul>
+
+                        <h4>Günlük Protein İhtiyacı</h4>
+                        <p>Aktif sporcular için günlük protein ihtiyacı vücut ağırlığının 1.6-2.2 gramı kadardır. Örneğin, 70 kg bir sporcu günde 112-154 gram protein tüketmelidir.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+                    <button type="button" class="btn btn-success">Kaydet</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 - Motivasyon -->
+    <div class="modal fade" id="blogModal3" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title">Motivasyonunu Koru</h5>
+                    <button type="button" class="close text-white" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-success mb-4">
+                        <i class="fas fa-info-circle mr-2"></i>
+                        <strong>Motivasyon Serisi #1:</strong> Fitness yolculuğunuzda motivasyonunuzu nasıl yüksek tutacağınızı keşfedin.
+                    </div>
+                    <!-- ... content ... -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 - Kardiyo Egzersizleri -->
+    <div class="modal fade" id="blogModal4" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title">Evde Kardiyo Egzersizleri</h5>
+                    <button type="button" class="close text-white" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-success mb-4">
+                        <i class="fas fa-info-circle mr-2"></i>
+                        <strong>Ev Egzersizleri #1:</strong> Ekipman gerektirmeyen etkili kardiyo hareketlerini öğrenin.
+                    </div>
+                    <!-- ... content ... -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5 - Sağlıklı Atıştırmalıklar -->
+    <div class="modal fade" id="blogModal5" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title">Sağlıklı Atıştırmalıklar</h5>
+                    <button type="button" class="close text-white" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-success mb-4">
+                        <i class="fas fa-info-circle mr-2"></i>
+                        <strong>Beslenme Rehberi #2:</strong> Fitness dostu atıştırmalık tarifleri ve önerilerini keşfedin.
+                    </div>
+                    <!-- ... content ... -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6 - Uyku ve Performans -->
+    <div class="modal fade" id="blogModal6" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title">Uyku ve Performans</h5>
+                    <button type="button" class="close text-white" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-success mb-4">
+                        <i class="fas fa-info-circle mr-2"></i>
+                        <strong>Sağlıklı Yaşam #1:</strong> Kaliteli uykunun spor performansına etkilerini öğrenin.
+                    </div>
+                    <!-- ... content ... -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h3>Yeni Blog Yazılarından Haberdar Olun</h3>
+                    <p class="text-muted">Haftalık bültenimize üye olun, en yeni içeriklerden ilk siz haberdar olun.</p>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="E-posta adresiniz">
+                        <div class="input-group-append">
+                            <button class="btn btn-success" type="button">Üye Ol</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase mb-4">Spor Hocam</h5>
+                    <p>Sağlıklı yaşam ve fitness yolculuğunuzda yanınızdayız.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-light mr-3"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-light mr-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-light mr-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h6 class="text-uppercase mb-4">Hızlı Erişim</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="AnaSayfa.Html" class="text-light">Ana Sayfa</a></li>
+                        <li class="mb-2"><a href="ProgramlarDetay.html" class="text-light">Programlar</a></li>
+                        <li class="mb-2"><a href="Blog.html" class="text-light">Blog</a></li>
+                        <li class="mb-2"><a href="Hakkimizda.html" class="text-light">Hakkımızda</a></li>
+                        <li><a href="Iletisim.html" class="text-light">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h6 class="text-uppercase mb-4">Blog Kategorileri</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="#" class="text-light">Fitness</a></li>
+                        <li class="mb-2"><a href="#" class="text-light">Beslenme</a></li>
+                        <li class="mb-2"><a href="#" class="text-light">Sağlıklı Yaşam</a></li>
+                        <li class="mb-2"><a href="#" class="text-light">Motivasyon</a></li>
+                        <li><a href="#" class="text-light">Başarı Hikayeleri</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h6 class="text-uppercase mb-4">İletişim</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i> Anıtkabir, Ankara</li>
+                        <li class="mb-2"><i class="fas fa-phone mr-2"></i> +90 555 123 45 67</li>
+                        <li class="mb-2"><i class="fas fa-envelope mr-2"></i> info@sporhocam.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-left">
+                    <p class="mb-0">&copy; 2024 Spor Hocam. Tüm hakları saklıdır.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-right">
+                    <a href="#" class="text-light mr-3">Gizlilik Politikası</a>
+                    <a href="#" class="text-light">Kullanım Şartları</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Sayfa yüklendiğinde loader'ı göster
+        window.addEventListener('load', function() {
+            const loader = document.querySelector(".loader-wrapper");
+            loader.style.display = "flex";
+            
+            // 1 saniye sonra loader'ı gizle
+            setTimeout(function() {
+                loader.classList.add("fade-out");
+                setTimeout(function() {
+                    loader.style.display = "none";
+                }, 300);
+            }, 500);
+        });
+
+        // Sayfa geçişlerinde loader'ı göster
+        document.addEventListener('click', function(e) {
+            const target = e.target;
+            if (target.tagName === 'A' && !target.getAttribute('href').startsWith('#')) {
+                const loader = document.querySelector(".loader-wrapper");
+                loader.style.display = "flex";
+                loader.classList.remove("fade-out");
+            }
+        });
+    </script>
+</body>
+</html> 

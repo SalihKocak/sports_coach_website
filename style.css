@@ -1,0 +1,1196 @@
+.navbar {
+    background-color: rgba(255, 255, 255, 0.98);
+    transition: all 0.3s ease;
+    padding: 1rem 0;
+}
+
+.navbar.scrolled {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #2c3e50;
+}
+
+.brand-text {
+    background: linear-gradient(45deg, #2ecc71, #2ecc71);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 15px;
+}
+
+.navbar-nav .nav-link {
+    color: #2c3e50;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #28a745;
+}
+
+.navbar-nav .nav-link i {
+    margin-right: 5px;
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 0.5rem;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+    color: #3498db !important;
+    background-color: rgba(52, 152, 219, 0.1);
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: center;
+        padding: 1rem 0;
+    }
+    
+    .navbar-nav .nav-item {
+        margin: 8px 0;
+    }
+    
+    .navbar .btn-primary {
+        margin: 10px auto !important;
+        display: inline-block;
+    }
+}
+
+body {
+    padding-top: 80px;
+}
+
+.form-inline {
+    margin-left: auto; /* Sağa yasla */
+}
+
+.form-control {
+    width: 300px; /* Arama kutusu genişliği */
+}
+
+.btn {
+    background-color: #27ae60; /* Buton arka plan rengi */
+    color: #fff; /* Buton yazı rengi */
+    font-weight: bold; /* Kalın yazı */
+}
+
+.ayrac{
+    border: none;
+    border-top:3px solid #343a40 ;
+    max-width: 250px;
+    margin: 25px auto;
+}
+
+.ibeyaz{
+    color: #343a40;
+    position: relative;
+    top: -55px;
+    font-size: 40px;
+    border: 10px solid #ffffff;
+    background-color: #ffffff;
+}
+
+.card-img-top {
+    border: none; /* Resmin çerçevesini kaldırır */
+}
+
+.carousel-inner .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+  .card {
+    margin-top: 20px;
+  }
+
+
+  .carousel-item.active img {
+    margin-top: 20px; /* Resmi 20 piksel aşağı kaydırın. İstediğiniz miktarı ayarlayabilirsiniz. */
+  }
+  
+  
+  .footer-basic {
+    padding:40px 0;
+    background-color:#ffffff;
+    color:#000000;
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #000000;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#000000;
+    margin-bottom:0;
+  }
+
+  /* #site-content {
+    margin-bottom: 60px; 
+}
+
+
+#site-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333; 
+  color: #fff; 
+  padding: 10px; 
+  text-align: center; 
+} */
+
+
+
+  
+  /* Credit to https://epicbootstrap.com/snippets/footer-basic */
+
+  /* body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.result {
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.result p {
+    margin: 8px 0;
+}
+
+#kalori-hesaplama {
+  position: absolute; 
+  top: 70px; 
+  left: 50%; 
+  transform: translateX(-50%); 
+} */
+
+/* Kalori Hesaplama Sayfası Stilleri */
+#kalori-hesaplama {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.calculator-card {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem !important;
+}
+
+.calculator-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    font-weight: 500;
+    margin-bottom: .5rem;
+    color: #495057;
+    font-size: 1rem;
+}
+
+.form-control-lg,
+.custom-select,
+.btn-lg {
+    height: 50px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.custom-select {
+    padding-right: 2rem;
+    background-position: right 1rem center;
+}
+
+.form-control {
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    padding: 12px;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #2ecc71;
+    box-shadow: none;
+}
+
+#calculateButton {
+    background-color: #2ecc71;
+    border: none;
+    padding: 12px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#calculateButton:hover {
+    background-color: #2ecc71;
+}
+
+.result-card {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.result-item:last-child {
+    border-bottom: none;
+}
+
+.result-label {
+    font-weight: 500;
+    color: #495057;
+}
+
+.result-value {
+    color: #28a745 !important;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    #kalori-hesaplama {
+        padding: 10px;
+    }
+    
+    .calculator-card {
+        padding: 1.5rem !important;
+    }
+    
+    .result-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .result-value {
+        margin-top: 5px;
+    }
+}
+
+.recommendation-box {
+    transition: all 0.3s ease;
+}
+
+.recommendation-box:hover {
+    transform: translateY(-5px);
+}
+
+.recommendation-box .card {
+    border: none;
+    border-radius: 10px;
+}
+
+.recommendation-box .card-body {
+    padding: 1.5rem;
+}
+
+.recommendation-box ul {
+    padding-left: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.recommendation-box .btn {
+    width: 100%;
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .recommendation-box {
+        margin-bottom: 1rem;
+    }
+}
+
+.recommendations {
+    background-color: #f8f9fa;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+.recommendation-card {
+    transition: all 0.3s ease;
+}
+
+.recommendation-card .card {
+    border: none;
+    border-radius: 10px;
+}
+
+.recommendation-card .card-header {
+    border-radius: 10px 10px 0 0;
+    padding: 1rem 1.5rem;
+}
+
+.recommendation-card .card-body {
+    padding: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.recommendation-card ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.recommendation-card ul li {
+    margin-bottom: 0.8rem;
+}
+
+.recommendation-card .btn {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+}
+
+/* Responsive düzenlemeler */
+@media (max-width: 768px) {
+    .recommendation-card .card-body {
+        padding: 1.5rem;
+        font-size: 1rem;
+    }
+    
+    .recommendations {
+        padding: 1rem;
+    }
+}
+
+/* Özel scroll bar */
+.recommendation-card .card-body {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.recommendation-card .card-body::-webkit-scrollbar {
+    width: 8px;
+}
+
+.recommendation-card .card-body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.recommendation-card .card-body::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.recommendation-card .card-body::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Form Stilleri */
+.calculator-card {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-control-lg {
+    height: calc(1.5em + 1rem + 2px);
+    padding: .5rem 1rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+}
+
+.custom-select {
+    height: calc(1.5em + 1rem + 2px);
+    padding: .5rem 1rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+    background-color: #fff;
+}
+
+.form-group label {
+    font-weight: 500;
+    margin-bottom: .5rem;
+    color: #495057;
+}
+
+.btn-lg {
+    padding: .75rem 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+}
+
+/* Select box için özel stiller */
+.custom-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center;
+    background-size: 8px 10px;
+    padding-right: 2rem;
+}
+
+/* Hover ve Focus durumları */
+.form-control:focus,
+.custom-select:focus {
+    border-color: #2ecc71;
+    box-shadow: 0 0 0 0.2rem 2ecc71(0,123,255,.25);
+}
+
+/* Responsive düzenlemeler */
+@media (max-width: 768px) {
+    .calculator-card {
+        padding: 1rem !important;
+    }
+    
+    .form-control-lg,
+    .custom-select,
+    .btn-lg {
+        font-size: 1rem;
+    }
+}
+
+/* Select box için özel stiller */
+.custom-select option {
+    padding: 10px;
+}
+
+.btn-block {
+    height: 50px;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+}
+
+/* Buton stilleri */
+.btn-primary {
+    background-color: #28a745 !important; /* Bootstrap yeşil rengi */
+    border-color: #28a745 !important;
+    color: #fff !important;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #218838 !important; /* Daha koyu yeşil */
+    border-color: #1e7e34 !important;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.btn-primary:active,
+.btn-primary:focus {
+    background-color: #1e7e34 !important;
+    border-color: #1c7430 !important;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5) !important;
+}
+
+/* Navbar butonu için özel stil */
+.navbar .btn-primary {
+    padding: 8px 20px;
+    border-radius: 5px;
+    margin-left: 15px !important;
+}
+
+/* Öneriler bölümündeki butonlar */
+.recommendation-card .btn-primary {
+    background-color: #28a745 !important;
+    border-color: #28a745 !important;
+    color: #fff !important;
+}
+
+/* Kart başlıkları için de yeşil renk */
+.recommendation-card .card-header {
+    background-color: #28a745 !important;
+    color: #fff !important;
+}
+
+/* Önerilerdeki sayısal değerler için yeşil renk */
+#nutritionRecommendation ul li,
+#supplementRecommendation ul li {
+    color: #495057;
+}
+
+#nutritionRecommendation ul li strong,
+#supplementRecommendation ul li strong,
+#nutritionRecommendation span,
+#supplementRecommendation span {
+    color: #28a745;
+    font-weight: 600;
+}
+
+/* BMI ve diğer hesaplanan değerler için yeşil renk */
+.calculated-value {
+    color: #28a745;
+    font-weight: 600;
+}
+
+/* Program Cards Styles */
+.program-card {
+    transition: transform 0.3s ease;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.program-card:hover {
+    transform: translateY(-5px);
+}
+
+.program-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.program-card .card-body {
+    padding: 1.5rem;
+}
+
+.program-card .card-title {
+    color: #28a745;
+    font-weight: 600;
+}
+
+.program-card ul li {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.program-hero {
+    padding-top: 7rem !important;
+    background-color: #f8f9fa;
+}
+
+.program-hero h1 {
+    font-weight: 700;
+    color: #212529;
+}
+
+.program-hero .lead {
+    color: #6c757d;
+    font-size: 1.2rem;
+}
+
+/* Program Modal Styles */
+.modal-content {
+    border-radius: 15px;
+    border: none;
+}
+
+.modal-header {
+    background-color: #28a745;
+    color: white;
+    border-radius: 15px 15px 0 0;
+}
+
+.modal-header .close {
+    color: white;
+    opacity: 1;
+}
+
+.modal-body {
+    padding: 2rem;
+}
+
+.modal-body h6 {
+    font-weight: 600;
+}
+
+.modal-body .alert {
+    background-color: rgba(40, 167, 69, 0.1);
+    border: none;
+}
+
+.modal-footer {
+    border-top: none;
+    padding: 1.5rem;
+}
+
+.modal-dialog {
+    margin-top: 4rem;
+}
+
+@media (max-width: 768px) {
+    .modal-dialog {
+        margin: 1rem;
+    }
+}
+
+/* About Page Styles */
+.about-hero {
+    padding-top: 7rem !important;
+}
+
+.value-card {
+    background: white;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+}
+
+.team-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+.team-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid #28a745;
+}
+
+.stat-card {
+    padding: 2rem;
+    background: white;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+    .about-hero {
+        text-align: center;
+    }
+    
+    .about-hero img {
+        margin-top: 2rem;
+    }
+}
+
+.result-card .card-header {
+    background-color: #28a745;
+    color: white;
+}
+
+/* Nutrition Page Styles */
+.nutrition-hero {
+    padding-top: 120px;
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.nutrition-tips .card {
+    border: none;
+    background: #f8f9fa;
+}
+
+.nutrition-tips .card-body {
+    padding: 2rem;
+}
+
+.meal-plan-card {
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.meal-plan-card:hover {
+    transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+    .nutrition-hero {
+        text-align: center;
+        padding-top: 100px;
+    }
+    
+    .nutrition-hero img {
+        margin-top: 2rem;
+    }
+}
+
+/* Contact Page Styles */
+.contact-hero {
+    padding-top: 120px;
+}
+
+.contact-info i {
+    width: 40px;
+}
+
+.form-control {
+    border: 1px solid #e9ecef;
+    padding: 0.8rem;
+}
+
+.form-control:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+.map-section iframe {
+    border-radius: 0.25rem;
+}
+
+@media (max-width: 768px) {
+    .contact-hero {
+        text-align: center;
+        padding-top: 100px;
+    }
+    
+    .contact-info {
+        justify-content: center;
+    }
+}
+
+/* Contact Form Select Styles */
+.custom-select {
+    height: calc(1.5em + 1.6rem + 2px) !important;
+    padding: 0.8rem !important;
+    color: #495057;
+    background-color: #fff;
+}
+
+.custom-select:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Loading Animation Styles */
+.loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.3s ease;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #28a745;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader-wrapper.fade-out {
+    opacity: 0;
+}
+
+/* Contact CTA Section Styles */
+.contact-cta {
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+                url('path/to/background-image.jpg') center/cover;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.contact-cta h2 {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.contact-cta .lead {
+    color: #666;
+}
+
+.contact-cta .btn {
+    padding: 12px 30px;
+    transition: all 0.3s ease;
+}
+
+.contact-cta .btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.contact-cta .btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contact-cta .btn-outline-success:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contact-cta .text-muted {
+    color: #6c757d;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact-cta .btn {
+        display: block;
+        margin: 10px auto;
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .contact-cta .btn-lg {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+/* Navbar Styles */
+.navbar-nav {
+    width: 100%;
+    justify-content: center;
+}
+
+.navbar-brand {
+    background-color: #28a745;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: white !important;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+.nav-link {
+    color: #495057 !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    margin: 0 0.25rem;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #28a745 !important;
+}
+
+.active-page {
+    display: none !important;
+}
+
+/* Custom Select Styles */
+.custom-select {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 1.75rem 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.custom-select:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.modal-dialog {
+    max-width: 500px;
+}
+
+.modal-content {
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.modal-body {
+    padding: 2rem;
+}
+
+/* Form control styles */
+.form-control {
+    border-radius: 0.25rem;
+}
+
+.form-control:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+/* Blog Styles */
+.blog-header {
+    background: linear-gradient(rgba(40, 167, 69, 0.1), rgba(40, 167, 69, 0.1));
+}
+
+.blog-posts .card {
+    transition: transform 0.3s ease;
+}
+
+.blog-posts .card:hover {
+    transform: translateY(-5px);
+}
+
+.blog-posts .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.featured-post .card-img-top {
+    height: 400px;
+    object-fit: cover;
+}
+
+.badge {
+    padding: 0.5em 1em;
+}
+
+.categories-wrapper .btn {
+    border-radius: 20px;
+    padding: 0.375rem 1.5rem;
+}
+
+.newsletter {
+    background: linear-gradient(rgba(40, 167, 69, 0.1), rgba(40, 167, 69, 0.1));
+}
+
+.pagination .page-link {
+    color: #28a745;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .featured-post .card-img-top {
+        height: 300px;
+    }
+}
+
+/* Blog Modal Styles */
+.modal-dialog-scrollable .modal-content {
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.modal-dialog-scrollable .modal-body {
+    padding: 2rem;
+}
+
+.blog-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.blog-content h4 {
+    color: #28a745;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.blog-content ul {
+    margin-bottom: 1.5rem;
+}
+
+.blog-content ul li {
+    margin-bottom: 0.5rem;
+}
+
+.modal-body img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+/* Modal Alert Styles */
+.modal-body .alert {
+    border-radius: 0.5rem;
+    border-left: 4px solid #28a745;
+}
+
+.modal-body .alert i {
+    font-size: 1.1rem;
+}
+
+.modal-body .alert strong {
+    font-weight: 600;
+}
+
+/* Modal Content Spacing */
+.modal-body {
+    padding-top: 0;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+    padding: 1rem 2rem;
+}
+  
